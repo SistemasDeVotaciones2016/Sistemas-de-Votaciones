@@ -1,2 +1,4 @@
 USUARIO:  root
-CONTRASEÑA: Itca123!
+CONTRASEÃ‘A: Itca123!
+
+Editado por Randy.
