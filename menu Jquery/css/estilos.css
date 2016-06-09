@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*formato para objetos de formulario*/
+.table{
+  border-style:groove; 
+  margin:50px auto;
+  border-radius: 15px;
+  border-bottom-color:#090;
+  border-spacing:5px;
+  color:#06F;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:#CCC;
+  }
+
+input[type="text"]
+{ width:100%;
+
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Estilos para el Cuerpo de la página */
+body{
+	background-color: #f2f7fb;
+	background-image: url(../imagenes/formulario/bg.jpg);
+	/*background-repeat:repeat-x;*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin-top:30px;
+}
+
+/* Etilos para formato de texto y Objetos*/
+p{
+	margin:0px; 
+	font-weight:bold;
+}
+
+a{text-decoration:none;}
+
+input[type=text] {
+    background-color:#e3e3e3;
+	border: 1px solid #666666;
+	color: #000099;
+	-moz-border-radius: 4px;
+
+    background-image:url(f1.jpg);
+    background-repeat:no-repeat;   
+    /*background-color:#84AA00;
+    height:30px;
+    width:254px;*/
+}
+
+input:hover{ /* Al poner :hover indicamos que afecte a los input al pasar el mouse sobre dichos input*/
+border: 1px solid  #C93; /* Con esto indicamos el size del borde, el estilo (thin, solid, etc) y el color del borde */
+
+}
+
+fieldset{
+	margin:10px;
+	padding:15px;
+	border-color:#09F;
+	
+	/*border: solid gray 1px;*/
+	background-color: #f7fff7;
+	display: block; 
+}
+
+.leyend{
+	font-weight:bold;
+	font-size:12px; 
+	width:200px; 
+	text-align:center;
+    color:#FFFFFF;
+    background-color:#000000;
+    padding:3px 8px 3px 8px;
+}
+
+.botones{
+    width:130px;
+    height:38px;
+    text-align:center;
+    font-weight:bold;
+    font-size:10px;
+	vertical-align:  middle; margin:3px;
+}
+
+
+img{
+	vertical-align:middle;
+}
+
+.fecha{
+	width:65px; background-color:#FFC;
+}
+/* Estilos para capas*/
+.div-left{
+	float:left;
+	width:auto;
+	margin:0 10px 10px 0;
+}
+
+.div-abajo{
+	clear:left;
+}
+
+#contenedor, .contenedor{ width:100%; }
+.medio { width:50%;}
+.centrado{text-align:center; width:100%;}
+
+.left{ text-align:left; }
+
+.right{ text-align:right;}
+
+.max{ height:100%; }
+
+.full{ width:100%; }
+
+.min{ width:auto; }
+
+#contenedor { height: 40px; }
+
+#contenido {
+	background-color: #FFC; 
+	text-align:center;
+	height: 50px;
+	margin: auto;
+	width: 50%; height:auto;
+}
+
+/*Estilos para tablas*/
+table{
+	width:auto;
+	margin-left:auto;
+	margin-right:auto; background-color:#FFF;
+}
+
+th{
+	background-image:url(../imagenes/formulario/th-bg.png);
+	height:25px;
+	font-size:12px; color:#FFF;
+}
+
+td{ margin:6px;}
+
+.table-font{ font-size:11px;}

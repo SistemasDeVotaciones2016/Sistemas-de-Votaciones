@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+  <LINK HREF="css/estilos-general.css" type="text/css" rel="stylesheet">
+    <LINK HREF="css/alertas.css" type="text/css" rel="stylesheet">
+  <link rel="icon" href="imagenes/favicon.ico"> 
+<meta charset="utf-8">
+<title>Sistema de Votaciones</title>
+<style>
+
+
+/* main Styles */
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+  background: #fafafa;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+a { text-decoration: none; }
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+h1 { text-align:center; margin-top:150px;}
+
+/* Navigation Styles */
+
+nav { background: #2ba0db; }
+
+nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 15px 14px;
+  transition: 0.3s linear;
+}
+
+nav ul li:hover { background: #126d9b; }
+
+nav ul li ul {
+  border-bottom: 5px solid #2ba0db;
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  border-top: 1px solid #444;
+  display: block;
+}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+  background: #373737;
+  display: block;
+  padding: 10px 14px;
+}
+
+nav ul li ul li a:hover { background: #126d9b; }
+
+nav .fa.fa-angle-down { margin-left: 6px; }
+</style>
+</head>
+
+<body>
+<nav>
+  <div class="container">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Realizar Voto</a></li>
+      <li> <a href="#">Opciones<i class='fa fa-angle-down'></i></a>
+        <ul>
+          <li><a href="#">Ajustes</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<form action='registro/validar.php' target='_blank' method='post'>
+  <table width='30%' border='0' align='center' cellpadding="0" bordercolor='#B2AEAE' bgcolor='#FFFFFF' valign='center'>
+    <tr><br>
+      <th align='center'>
+          <b>IDENTIFICACION DE USUARIOS</b>
+      </th>
+    </tr>
+    <tr>
+      <td align="center"><img src="imagenes/reportes/logo.png" width="172" height="74" style="margin-top:1em"><br><br>
+        <center>      
+          
+            <input type='hidden' name='zq' value='1'>
+            <table border='0' style="width:430px">
+              <tr>
+                <td>
+                                  <fieldset>
+                                        <div class="contenedor">
+                                          <div class="div-left" style="width:100px">
+                                            <p>Usuario:</p></div>
+                      <div class="div-left">
+                        <input type='text' name='txtUsuario' id="txtUsuario" required>
+                      </div>
+                                        </div>
+                  
+                    <div class="div-abajo" id="contenedor">
+                      <div class="div-left" style="width:100px"><b>Contrase&ntilde;a: </b></div>
+                      <div class="div-left">
+                        <input type='password' name='txtClave' maxlength='25' id="txtClave" required>
+                      </div>
+                    </div>
+                  </fieldset>
+                </td>
+              </tr>
+              
+              <tr>
+                <td colspan='2' align='center'>
+                  <button name="btnGuardar" type="submit" value="INGRESAR" style="height:38px; width:138px">
+                    <img src="imagenes/botones/login.png" width="30" height="30" /><strong>INGRESAR</strong>
+                  </button>
+                </td>
+              </tr>
+              <tr><td><br><br><img src="imagenes/reportes/bandera.jpg" width="500" height="250"></td></tr>
+                            <tr>
+                <td colspan="2" id="error" class="bordeCeleste">
+                </td>
+              </tr>
+            </table><br>
+            </center>
+      </td>
+    </tr>
+  </table>
+</form>
+
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+<script>
+$('nav li').hover(
+  function() {
+	  $('ul', this).stop().slideDown(200);
+  },
+	function() {
+    $('ul', this).stop().slideUp(200);
+  }
+);
+</script>
+
+
+
+
+</body>
+</html>
